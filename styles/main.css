@@ -1,0 +1,38 @@
+/* HEADER */
+
+.header__container {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__container-home{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.phone:hover{
+    transition: 0.7s ease all;
+    transform: rotate(360deg);
+}
+
+.header__icon, .header__logo{
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .header__container {
+        padding: 30px 50px;
+    }
+    .header__icon, .header__logo{
+        height: 47px;
+    }
+}
