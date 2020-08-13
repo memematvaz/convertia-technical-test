@@ -21,6 +21,7 @@
 
 .phone{
     filter: invert(18%) sepia(96%) saturate(2442%) hue-rotate(194deg) brightness(104%) contrast(104%);
+
 }
 
 .phone:hover{
@@ -518,6 +519,7 @@
 
 .bar-contact-phone{
     filter: invert(100%) sepia(100%) saturate(19%) hue-rotate(300deg) brightness(104%) contrast(109%);
+    margin-left: 20px;
 }
 
 .customers__bar-contact-text{
