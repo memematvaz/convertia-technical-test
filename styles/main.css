@@ -46,8 +46,6 @@
 
 /*POP UP*/
 
-
-
 .pop-up__container{
     height: 100vh;
     width: 100vw;
@@ -195,4 +193,79 @@
 
 .none{
     display:none;
+}
+
+/*MAIN*/
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__hire-today--background{
+    width: 100%;
+    height: 550px;
+    background-image: url(./images/hiretoday.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main__hire-today--text{
+    margin: 0px 30px 30px 30px;
+    color: #0063BC;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.main__hire-today--text-background{
+    background-color: white;
+    padding: 10px 30px 10px 10px;
+}
+
+.main__hire-today--button{
+    margin: 30px 0px 50px 30px;
+    border-style: solid;
+    border-color: white;
+    background-color: #0063BC;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 220px;
+    font-size: 16px;
+}
+
+.main__customers--background{
+    width: 100%;
+    height: 550px;
+    background-image: url(./images/customers.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.main__customers--button{
+    margin: 30px 30px 50px 30px;
+    border-style: solid;
+    border-color: #FF6A00;
+    background-color: white;
+    text-transform: uppercase;
+    color: #FF6A00;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 350px;
 }
