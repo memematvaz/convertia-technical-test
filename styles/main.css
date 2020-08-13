@@ -231,7 +231,7 @@
 
 .main__hire-today--button{
     margin: 30px 0px 50px 30px;
-    border-style: solid;
+    border: 4px solid;
     border-color: white;
     background-color: #0063BC;
     text-transform: uppercase;
@@ -239,8 +239,14 @@
     padding: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    width: 220px;
+    max-width: 200px;
     font-size: 16px;
+}
+
+.main__hire-today--button:hover{
+    border-color: #0063BC;
+    background-color: white;
+    color: #0063BC;
 }
 
 .main__customers--background{
@@ -258,7 +264,7 @@
 
 .main__customers--button{
     margin: 30px 30px 50px 30px;
-    border-style: solid;
+    border: 4px solid;
     border-color: #FF6A00;
     background-color: white;
     text-transform: uppercase;
@@ -267,5 +273,68 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    max-width: 350px;
+    max-width: 330px;
+}
+
+.main__customers--button:hover{
+    border-color: white;
+    background-color:#FF6A00;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .main__hire-today--text{
+        margin: 0px 30px 40px 80px;
+        font-size: 60px;
+    }
+
+    .main__hire-today--button{
+        margin: 30px 0px 80px 80px;
+        max-width: 300px;
+    }
+    .main__customers--button{
+        margin: 30px 0px 80px 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main__blue{
+        background-color: #0063BC;
+    }
+    .main__container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__hire-today--background{
+        height: calc(100vh - 107px);
+        width: 50vw;
+        filter: invert(18%) sepia(103%) saturate(280%) hue-rotate(189deg) brightness(40%) contrast(152%)opacity(0.9);
+    }
+
+    .main__hire-today--background:hover{
+        filter: none;
+    }
+    
+    .main__hire-today--text{
+        margin: 0px 30px 40px 100px;
+    }
+
+    .main__hire-today--button{
+        margin: 30px 0px 100px 100px;
+        padding: 15px;
+        
+    }
+    .main__customers--background{
+        height: calc(100vh - 107px);
+        width: 50vw;
+        filter: invert(18%) sepia(103%) saturate(280%) hue-rotate(189deg) brightness(40%) contrast(152%)opacity(0.9);
+    }
+    .main__customers--background:hover{
+        filter: none;
+    }
+    .main__customers--button{
+        margin: 30px 0px 100px 100px;
+        padding: 15px;
+    }
 }
