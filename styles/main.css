@@ -1048,3 +1048,30 @@
         margin-bottom: 40px;
     }
 }
+
+.hire-today__bar-packs{
+    width: 100%;
+    background-image: url(./images/bar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.hire-today__bar{
+    border: 4px solid;
+    border-color: white;
+    background-color: #0063BC;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    margin:20px 0px;
+}
