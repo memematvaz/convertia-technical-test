@@ -101,7 +101,7 @@
         <div class="customers__bar-contact">
             <div class="customers__bar-contact--email">
                 <img src="./styles/images/email.svg" alt="email" class="customers__bar-contact-icon">
-                <p class="customers__bar-contact-text">atencionclientes@xxx.com.mx</p>
+                <p class="customers__bar-contact-text bar-email.text">atencionclientes@xxx.com.mx</p>
             </div>
             <div class="customers__bar-contact--phone">
                 <img src="./styles/images/phone.png" alt="teléfono" class="customers__bar-contact-icon bar-contact-phone">
@@ -127,13 +127,15 @@
         </nav>
     </footer>
     <div class="customers__contact">
-        <p class="customers__contact-text">Para contratar déjanos tu número <span class="customers__contact-text--changed">y te marcaremos en segundos.</span></p>
+        <p class="customers__contact-text">Para contratar déjanos tu número<br/><span class="customers__contact-text--changed">y te marcaremos en segundos.</span></p>
         <form action="" class="customers__contact-form">
-            <input class="customers__contact-form-input" type="tel" name="phone" placeholder="55 1234 5678" required></input>
-            <label class="customers__contact-form-checkbox" >
-                <input type="checkbox" name="privacy-policies" required></input>
-                He leído y acepto los <span class="customers__contact-form-checkbox--changed">Términos y Condiciones</span>
-            </label>
+            <div class="customers__contact-form--inputs">
+                <input class="customers__contact-form-input" type="tel" name="phone" placeholder="55 1234 5678" required></input>
+                <label class="customers__contact-form-checkbox" >
+                    <input type="checkbox" name="privacy-policies" required checked></input>
+                    He leído y acepto los <span class="customers__contact-form-checkbox--changed">Términos y Condiciones</span>
+                </label>
+            </div>
             <button class="customers__contact-form-button">Solicitar</button>
         </form>
     </div>
