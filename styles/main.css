@@ -865,3 +865,186 @@
         text-align: center;
     }
 }
+
+/* HIRE TODAY */
+
+.hire-today__hero{
+    width: 100%;
+    height: 550px;
+    background-image: url(./images/herohiretoday.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.hire-today__hero-text-container{
+    padding: 30px;
+
+}
+
+.hire-today__hero-title{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.hire-today__hero-title--changed{
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.hire-today__hero-subtitle{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hire-today__hero-text{
+    margin: 20px 0px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.hire-today__hero-text-background{
+    background-color: white;
+    padding: 10px 30px 10px 0px;
+}
+
+.hire-today__hero-text--changed{
+    font-weight: 600;
+}
+
+.hire-today__hero-button{
+    border: 4px solid;
+    border-color: white;
+    background-color: #0063BC;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hire-today__hero-contact{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .hire-today__hero{
+        width: 100%;
+        height: calc(100vh - 107px);
+        padding: 100px 50px 0px 80px; 
+    }
+}
+
+@media (min-width: 1200px){
+    .hire-today__hero{
+        padding: 100px 100px 0px 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hire-today__hero-title{
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 60px;
+    }
+    
+    .hire-today__hero-subtitle{
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    
+    .hire-today__hero-text{
+        font-size: 35px;
+    }
+
+
+
+    .hire-today__hero-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+        margin-top: 30px;
+        width: 400px;
+    }
+    .hire-today__hero-contact--title{
+        background-color: #0063BC;
+        border-radius: 50px 50px 0px 0px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        width: 400px;
+    }
+    .hire-today__hero-contact--text{
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #0063BC;
+        max-width: 250px;
+    }
+    .hire-today__hero-contact--form{
+      display: flex;
+      flex-direction: column;  
+      align-items: center;
+    }
+    .hire-today__hero-contact--form--inputs{ display: flex;
+    flex-direction: column;  
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    
+    }
+    .hire-today__hero-contact--form-label{
+        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        color: black;
+    }
+    .hire-today__hero-contact--form-input{
+        border-color: #777777;
+        border-style: solid;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 8px;
+        width: 230px;
+    }
+    .hire-today__hero-contact--form-checkbox{
+        padding: 10px 0px 10px 0px;   
+        color:#777777;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+    }
+    .hire-today__hero-contact--form-button{
+        border-style: solid;
+        border-color: #FF6A00;
+        background-color: #FF6A00;
+        color: white;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        width: 245px;
+        margin-bottom: 40px;
+    }
+}

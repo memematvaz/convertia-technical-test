@@ -5,6 +5,9 @@ const iconCloseWhere = document.querySelector('#pop-up-close-where')
 const popupPhone = document.querySelector('#pop-up-phone')
 const popupWhere = document.querySelector('#pop-up-where')
 
+const tripleContainer = document.querySelector('#triple')
+const doubleContainer = document.querySelector('#double')
+
 function openPopupPhone(event) {
     popupPhone.classList.remove('none');
     popupPhone.classList.add('pop-up__container');
