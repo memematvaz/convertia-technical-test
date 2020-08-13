@@ -71,6 +71,7 @@
     align-items: center;
     align-self: flex-end;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .pop-up__close-bar{
@@ -241,6 +242,7 @@
     font-weight: 600;
     max-width: 200px;
     font-size: 16px;
+    text-align: center;
 }
 
 .main__hire-today--button:hover{
@@ -274,6 +276,7 @@
     font-weight: 600;
     font-size: 16px;
     max-width: 330px;
+    text-align: center;
 }
 
 .main__customers--button:hover{
@@ -298,9 +301,6 @@
 }
 
 @media (min-width: 1200px) {
-    .main__blue{
-        background-color: #0063BC;
-    }
     .main__container{
         display: flex;
         flex-direction: row;
@@ -328,7 +328,7 @@
     .main__customers--background{
         height: calc(100vh - 107px);
         width: 50vw;
-        filter: invert(18%) sepia(103%) saturate(280%) hue-rotate(189deg) brightness(40%) contrast(152%)opacity(0.9);
+        filter: invert(18%) sepia(103%) saturate(280%) hue-rotate(189deg) brightness(30%) contrast(152%)opacity(0.9);
     }
     .main__customers--background:hover{
         filter: none;
