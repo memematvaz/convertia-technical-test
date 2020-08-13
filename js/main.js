@@ -1,18 +1,32 @@
 const iconPhone = document.querySelector('.phone')
 const iconWhere = document.querySelector('.where')
-const iconClose = document.querySelector('#pop-up-close')
-const popup = document.querySelector('#pop-up')
+const iconClosePhone = document.querySelector('#pop-up-close-phone')
+const iconCloseWhere = document.querySelector('#pop-up-close-where')
+const popupPhone = document.querySelector('#pop-up-phone')
+const popupWhere = document.querySelector('#pop-up-where')
 
-function openPopup(event) {
-    popup.classList.remove('none');
-    popup.classList.add('pop-up__container');
+function openPopupPhone(event) {
+    popupPhone.classList.remove('none');
+    popupPhone.classList.add('pop-up__container');
 }
 
-function closePopup(event) {
-    popup.classList.add('none');
-    popup.classList.remove('pop-up__container');
+function closePopupPhone(event) {
+    popupPhone.classList.add('none');
+    popupPhone.classList.remove('pop-up__container');
 }
 
-iconPhone.addEventListener('click', openPopup);
-iconClose.addEventListener('click', closePopup);
-iconWhere.addEventListener('click', openPopup);
+function openPopupWhere(event) {
+    popupWhere.classList.remove('none');
+    popupWhere.classList.add('pop-up__container');
+}
+
+function closePopupWhere(event) {
+    popupWhere.classList.add('none');
+    popupWhere.classList.remove('pop-up__container');
+}
+
+iconPhone.addEventListener('click', openPopupPhone);
+iconClosePhone.addEventListener('click', closePopupPhone);
+
+iconWhere.addEventListener('click', openPopupWhere);
+iconCloseWhere.addEventListener('click', closePopupWhere);

@@ -19,6 +19,10 @@
 
 }
 
+.phone{
+    filter: invert(18%) sepia(96%) saturate(2442%) hue-rotate(194deg) brightness(104%) contrast(104%);
+}
+
 .phone:hover{
     transition: 0.7s ease all;
     transform: rotate(360deg);
@@ -115,6 +119,7 @@
     font-weight: 600;
     font-size: 41px;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 .pop-up__text{
