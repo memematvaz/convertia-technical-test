@@ -54,10 +54,8 @@
 .pop-up__black{
     height: 100vh;
     width: 100vw;
-    height: 1000px;
-    width: 1000px;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     top: 0;
     background-color: black;
     opacity: 0.9;
@@ -202,6 +200,15 @@
 }
 
 @media (min-width: 1200px) {
+    .pop-up__black{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 98;
+        top: 0;
+        background-color: black;
+        opacity: 0.9;
+    }
     .pop-up__close-container{
 
         margin-right: 150px;
