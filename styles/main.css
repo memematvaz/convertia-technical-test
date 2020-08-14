@@ -1106,6 +1106,11 @@
     align-items: center;
 }
 
+.hire-today__icons-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .hire-today__packs-card--icon{
     margin: 20px 20px;
     height: 60px;
@@ -1210,11 +1215,23 @@
         margin: 30px 60px;
         min-height: 130px;
     }   
+
+
     .hire-today__packs-card--icon{
         margin: 20px 20px 20px 0px;
         height: 60px;
     }
     .hire-today__packs-card--text {
         margin:20px
+    }
+}
+
+@media (min-width: 1200px){
+    .hire-today__icons-text-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 25px;
+        justify-content: space-between;
+        width: 100%;
     }
 }

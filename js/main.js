@@ -5,9 +5,8 @@ const iconCloseWhere = document.querySelector('#pop-up-close-where')
 const popupPhone = document.querySelector('#pop-up-phone')
 const popupWhere = document.querySelector('#pop-up-where')
 
-const more = document.querySelectorAll('.hire-today__packs--more')
-const less = document.querySelectorAll('.hire-today__packs--less')
-const card = document.querySelectorAll('.hire-today__packs-card-second')
+const more = document.querySelector('#more')
+const card = document.querySelector('#card')
 
 function openPopupPhone(event) {
     popupPhone.classList.remove('none');
@@ -29,14 +28,21 @@ function closePopupWhere(event) {
     popupWhere.classList.remove('pop-up__container');
 }
 
-function openCard(event) {
-    popupWhere.classList.add('none');
-    popupWhere.classList.remove('pop-up__container');
+function toggleCard(event) {
+    if(card.classList.contains('none')=== true){
+        card.classList.remove('none');
+        card.classList.add('hire-today__packs-card-second');
+        more.classList.remove('hire-today__packs--more');
+        more.classList.add('hire-today__packs--less');
+    }else{
+        card.classList.add('none');
+        card.classList.remove('hire-today__packs-card-second');
+        more.classList.remove('hire-today__packs--less');
+        more.classList.add('hire-today__packs--more');
+    }
+   
 }
 
-more.forEach(function(button) {
-    button.addEventListener('click', openCard);
-  });
 
 
 iconPhone.addEventListener('click', openPopupPhone);
@@ -44,3 +50,5 @@ iconClosePhone.addEventListener('click', closePopupPhone);
 
 iconWhere.addEventListener('click', openPopupWhere);
 iconCloseWhere.addEventListener('click', closePopupWhere);
+
+more.addEventListener('click', toggleCard);
