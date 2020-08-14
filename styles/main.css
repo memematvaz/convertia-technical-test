@@ -639,7 +639,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     text-decoration: underline;
-    padding: 0px 10px 10px;
+    padding: 0px 0px 10px;
     text-align: center;
 }
 
@@ -890,7 +890,7 @@
 .hire-today__hero-title{
     color: black;
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .hire-today__hero-title--changed{
@@ -911,6 +911,7 @@
     color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    line-height: 1.3;
 }
 
 .hire-today__hero-text-background{
@@ -947,6 +948,9 @@
         height: calc(100vh - 107px);
         padding: 100px 50px 0px 80px; 
     }
+    .hire-today__hero-title{
+        font-size: 50px;
+    }
 }
 
 @media (min-width: 1200px){
@@ -958,8 +962,6 @@
     }
 
     .hire-today__hero-title{
-        color: black;
-        font-family: 'Roboto', sans-serif;
         font-size: 60px;
     }
     
@@ -970,6 +972,7 @@
     
     .hire-today__hero-text{
         font-size: 35px;
+        
     }
 
 
@@ -1051,7 +1054,8 @@
 
 .hire-today__bar-packs{
     width: 100%;
-    background-image: url(./images/bar.png);
+    background-image: url(./images/bar.png) ;
+    filter: brightness(0.8);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1073,5 +1077,144 @@
     width: 200px;
     font-size: 16px;
     text-align: center;
+    margin:40px 0px;
+}
+
+.hire-today__packs{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.hire-today__packs-card{
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.16); 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.hire-today__packs-card--text-containers{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.hire-today__packs-card-main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.hire-today__packs-card--icon{
+    margin: 20px 20px;
+    height: 60px;
+}
+.hire-today__packs-card--text{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;  
+    padding: 10px 0px; 
+}
+.hire-today__packs-card-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.hire-today__packs-card--subtext{
+    color: #434343;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hire-today__packs-card--button{
+    border: 4px solid;
+    border-color: #0063BC;
+    background-color: #0063BC;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    width: 200px;
+    font-size: 16px;
+    text-align: center;
     margin:20px 0px;
+}
+.hire-today__packs--more{
+    background-color: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 2px 50px rgba(0, 0, 0, 0.6);
+    margin-top: -50px;
+    align-self: center;
+}
+
+.hire-today__more-bar{
+    display: block;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    background-color: #AAAAAA;
+    z-index: 99;
+    margin-bottom: -3px;
+}
+
+.hire-today__packs--more > span:first-child{
+    transform:  rotate(90deg)
+}
+
+.hire-today__packs--less{
+    background-color: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 10px 2px 50px rgba(0, 0, 0, 0.6);
+    margin-top: -50px;
+    align-self: center;
+}
+
+.hire-today__packs--less > span:first-child{
+    display: none;
+}
+
+.none{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .hire-today__packs-card{
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 60px;
+        min-height: 130px;
+    }   
+    .hire-today__packs-card--icon{
+        margin: 20px 20px 20px 0px;
+        height: 60px;
+    }
+    .hire-today__packs-card--text {
+        margin:20px
+    }
 }

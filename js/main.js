@@ -5,8 +5,9 @@ const iconCloseWhere = document.querySelector('#pop-up-close-where')
 const popupPhone = document.querySelector('#pop-up-phone')
 const popupWhere = document.querySelector('#pop-up-where')
 
-const tripleContainer = document.querySelector('#triple')
-const doubleContainer = document.querySelector('#double')
+const more = document.querySelectorAll('.hire-today__packs--more')
+const less = document.querySelectorAll('.hire-today__packs--less')
+const card = document.querySelectorAll('.hire-today__packs-card-second')
 
 function openPopupPhone(event) {
     popupPhone.classList.remove('none');
@@ -27,6 +28,16 @@ function closePopupWhere(event) {
     popupWhere.classList.add('none');
     popupWhere.classList.remove('pop-up__container');
 }
+
+function openCard(event) {
+    popupWhere.classList.add('none');
+    popupWhere.classList.remove('pop-up__container');
+}
+
+more.forEach(function(button) {
+    button.addEventListener('click', openCard);
+  });
+
 
 iconPhone.addEventListener('click', openPopupPhone);
 iconClosePhone.addEventListener('click', closePopupPhone);
